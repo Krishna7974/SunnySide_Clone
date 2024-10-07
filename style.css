@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark_desaturated-cyan: hsl(168, 34%, 35%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 57%, 67%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: sl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --Barlow600: 600;
+  --Fraunces1: 700;
+  --Fraunces2: 900;
+}
+
+body {
+  font-family: "Barlow";
+}
+header {
+  background-image: url("images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: var(--Barlow600);
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  align-items: center;
+}
+ul h1 {
+  font-weight: var(--Barlow600);
+}
+ul button {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: white;
+}
+
+.creative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem;
+}
+.creative h1 {
+  font-size: 4rem;
+  font-family: "Fraunces";
+  letter-spacing: 5px;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section div,
+img {
+  width: 100%;
+}
+
+#first-bg {
+  background-image: url("images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#second-bg {
+  background-image: url("images/desktop/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.same-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  padding: 10rem;
+}
+
+.same-div h1 {
+  font-family: "Fraunces";
+  font-weight: var(--Fraunces2);
+  font-size: 3rem;
+  color: var(--very-dark-desaturated-blue);
+}
+.same-div p {
+  font-weight: var(--Barlow600);
+  color: var(--grayish-blue);
+}
+.same-div a {
+  font-family: "Fraunces";
+  font-weight: var(--Fraunces1);
+  color: var(--very-dark-desaturated-blue);
+}
+.second-same {
+  height: 633px;
+  padding: 0 12rem 5rem 12rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+#first-bg {
+  color: var(--dark_desaturated-cyan);
+  font-weight: var(--Barlow600);
+}
+
+#second-bg {
+  color: var(--dark-blue);
+  font-weight: var(--Barlow600);
+}
+
+.second-same h2 {
+  font-family: "Fraunces";
+  font-weight: var(--Fraunces2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40rem;
+}
+.nomial {
+  height: 7rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.nomial h2 {
+  font-family: "Fraunces";
+  color: var(--grayish-blue);
+  letter-spacing: 0.7rem;
+}
+
+.divOfMain {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 10rem;
+}
+
+.divOfMain p {
+  font-weight: var(--Barlow600);
+  text-wrap: warp;
+}
+
+.nameDiv h4 {
+  font-family: "Fraunces";
+  font-weight: var(--Fraunces1);
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.3rem;
+}
+.nameDiv p {
+  color: var(--grayish-blue);
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+#person1,
+#person2,
+#person3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  width: 35rem;
+}
+
+main img {
+  border-radius: 50%;
+  width: 6rem;
+}
+
+.fourPhoto {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 13rem;
+  background-color: var(--dark-moderate-cyan);
+}
+footer div h2 {
+  color: var(--dark_desaturated-cyan);
+}
+footer div p {
+  color: var(--dark_desaturated-cyan);
+  font-weight: var(--Barlow600);
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+ul button {
+  font-weight: var(--Barlow600);
+  font-size: 0.9rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+ul button:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #6bceff;
+}
+
+section a:hover {
+  cursor: pointer;
+}
+
+.info p:hover {
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.logo svg:hover {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:480px){
+  .fourPhoto{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  }
+
+  .divOfMain{
+    flex-direction: column;
+  }
+
+}
