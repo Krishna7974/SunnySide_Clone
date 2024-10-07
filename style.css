@@ -258,21 +258,3 @@ section a:hover {
 .logo svg:hover {
   cursor: pointer;
 }
-
-
-@media screen and (max-width:480px){
-  .fourPhoto{
-    display: flex;
-    flex-direction: column;
-  }
-
-  section {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  }
-
-  .divOfMain{
-    flex-direction: column;
-  }
-
-}
